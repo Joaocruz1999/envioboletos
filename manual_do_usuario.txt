@@ -1,0 +1,62 @@
+=========================================================
+          MANUAL DO USUÁRIO - SISTEMA DE BOLETOS
+=========================================================
+
+Olá! Este é um guia rápido e simples para você usar o 
+sistema de envio de boletos. Não se preocupe, é bem fácil!
+
+1. O QUE ESTE SISTEMA FAZ?
+---------------------------------------------------------
+Ele pega uma lista de clientes (em uma planilha Excel) e
+um monte de boletos (em formato PDF) e cruza as informações.
+Depois, ele envia automaticamente um e-mail para cada cliente
+já com o boleto correto anexado.
+
+2. COMO PREPARAR A SUA PLANILHA EXCEL
+---------------------------------------------------------
+Sua planilha PRECISA ter essas 4 colunas com estes nomes 
+exatos na primeira linha:
+
+- Nome
+- Razao Social
+- CNPJ
+- Email
+
+Dica: O CNPJ não precisa de pontos ou traços, pode ser 
+apenas os números, o sistema entende!
+
+3. COMO PREPARAR OS SEUS BOLETOS EM PDF
+---------------------------------------------------------
+Para o sistema saber de quem é cada boleto, o nome do arquivo 
+PDF precisa seguir uma regra simples:
+
+boleto_NUMERODOCNPJ.pdf
+
+Exemplo: Se o CNPJ for 01.234.567/8901-23, o nome do 
+arquivo deve ser: boleto_01234567890123.pdf
+
+Atenção: Sempre use "boleto_" (com letras minúsculas e 
+underline) antes dos números do CNPJ!
+
+4. PASSO A PASSO PARA USAR O SISTEMA
+---------------------------------------------------------
+PASSO 1: Abra o site/link do sistema de boletos.
+PASSO 2: Digite a senha de acesso e clique em "Entrar".
+PASSO 3: Na parte esquerda do painel:
+         - Escolha qual e-mail vai ser o REMETENTE.
+         - Preencha o "Assunto" do e-mail.
+         - Preencha o "Corpo" (texto) do e-mail.
+PASSO 4: No centro da tela:
+         - Arraste a sua planilha do Excel para o primeiro quadro.
+         - Arraste todos os seus arquivos PDF para o segundo quadro.
+PASSO 5: Clique no botão azul "Processar uploads".
+PASSO 6: O sistema vai mostrar uma tabela com os clientes que
+         deram "match" (que a planilha bateu com o pdf).
+         Você pode conferir, marcar ou desmarcar quem não quiser 
+         enviar, e até adicionar e-mails em cópia (separando por vírgula).
+PASSO 7: Se estiver tudo certo, aperte "Disparar E-mails".
+
+Pronto! Agora é só esperar a barrinha carregar. O sistema envia 
+1 e-mail a cada 3 segundos para evitar que as mensagens caiam no 
+Lixo Eletrônico (Spam).
+
