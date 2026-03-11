@@ -9,7 +9,7 @@ import pandas as pd
 
 EXPECTED_COLUMNS = ["Nome", "Razao Social", "CNPJ", "Email"]
 EXPECTED_COLUMNS_SET = set(EXPECTED_COLUMNS)
-PDF_PATTERN = re.compile(r"^boleto_(\d{14})\.pdf$", re.IGNORECASE)
+PDF_PATTERN = re.compile(r"^.+_(\d{14})\.pdf$", re.IGNORECASE)
 
 
 def normalize_cnpj(value: object) -> str:

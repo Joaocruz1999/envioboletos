@@ -95,7 +95,7 @@ def main() -> None:
         "Boletos em PDF",
         type=["pdf"],
         accept_multiple_files=True,
-        help="Padrão esperado: boleto_00111222000199.pdf",
+        help="Padrão esperado: PREFIXO_00111222000199.pdf (ex.: boleto_, TFF_, CRPS_)",
     )
 
     process_button = st.button("Processar uploads", type="primary", use_container_width=True)
